@@ -23,16 +23,18 @@ A Node.js-based multi-threaded web scraping tool that leverages worker threads a
    cd project-name
    
 3. **Install Dependencies**:
+   ```bash
    npm install
 
-4. **Prepare Proxies**:
+5. **Prepare Proxies**:
    Ensure that your proxies.csv file is in the required format.
    IP:Port:Username:Password
 
-5. **Execute the Script**:
+6. **Execute the Script**:
    Adjust the CSV file path and set a task limit as desired.
+   ```bash
    node main.js ./proxies.csv 10
 
-6. **Check Output**:
+8. **Check Output**:
    Review the generated output.csv file for the collected results.
 
