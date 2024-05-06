@@ -28,7 +28,7 @@ A Node.js-based multi-threaded web scraping tool that leverages worker threads a
 
 5. **Prepare Proxies**:
    Ensure that your proxies.csv file is in the required format.
-   IP:Port:Username:Password
+   `IP:Port:Username:Password`
 
 6. **Execute the Script**:
    Adjust the CSV file path and set a task limit as desired.
