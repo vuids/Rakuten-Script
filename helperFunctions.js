@@ -3,9 +3,18 @@ import csv from 'csv-parser';
 import { createReadStream, createWriteStream } from 'fs';
 import { stringify } from 'csv-stringify';
 
-export function generateSixDigitNumber(catchall) {
-    const num = Math.floor(100000 + Math.random() * 900000);
-    return `joe${num}@${catchall}`;
+export function generateRandomString(length) {
+    const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+    let result = '';
+    for (let i = 0; i < length; i++) {
+        result += characters.charAt(Math.floor(Math.random() * characters.length));
+    }
+    return result;
+}
+
+export function generateEmailAddress(catchall) {
+    const randomString = generateRandomString(10);
+    return `${randomString}@${catchall}`;
 }
 
 export function delay(time) {
