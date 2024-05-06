@@ -16,11 +16,11 @@ A Node.js-based multi-threaded web scraping tool that leverages worker threads a
 ## Setup and Usage
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/yourusername/project-name.git
+   git clone https://github.com/vuids/Rakuten-Script.git
 
 2. **Navigate to the Project Directory**:
    ```bash
-   cd project-name
+   cd Rakuten-Script
    
 3. **Install Dependencies**:
    ```bash
