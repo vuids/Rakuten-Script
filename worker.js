@@ -59,7 +59,7 @@ async function mainWithBrowser() {
 
             // Check if navigation was successful
             if (response && response.ok()) {
-                console.log(`Successfully navigated to ${urlToNavigate} for ${email}`);
+                //console.log(`Successfully navigated to ${urlToNavigate} for ${email}`);
             } else {
                 throw new Error(`Failed to load page, status code: ${response.status()}`);
             }
