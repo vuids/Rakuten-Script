@@ -32,6 +32,7 @@ A Node.js-based multi-threaded web scraping tool that leverages worker threads a
 
 6. **Execute the Script**:
    Adjust the CSV file path and set a task limit as desired.
+   For example using the proxies.csv file from the project and 10 tasks:
    ```bash
    node main.js ./proxies.csv 10
 
