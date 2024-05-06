@@ -1,7 +1,7 @@
 # Rakuten Script
 
 ## Overview
-A Node.js-based multi-threaded web scraping tool that leverages worker threads and Puppeteer to collect data after logging in to Rakuten.com concurrently from the account page. The tool navigates using proxies and exports results to a CSV file.
+A Node.js-based multi-threaded web scraping tool that leverages worker threads and Puppeteer to collect data concurrently from the account page after logging in to Rakuten.com. The tool navigates using proxies and exports results to a CSV file.
 
 ## Features
 - **Concurrent Web Scraping**: Utilizes worker threads for efficient data collection.
