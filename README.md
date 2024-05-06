@@ -1,39 +1,38 @@
 # Rakuten Script
 
-
-## Table of Contents
-1. [Project Description](#project-description)
-2. [Features](#features)
-3. [Prerequisites](#prerequisites)
-4. [Setup Instructions](#setup-instructions)
-5. [Usage](#usage)
-6. [Contribution Guidelines](#contribution-guidelines)
-7. [License](#license)
-8. [Contact Information](#contact-information)
-
-## Project Description
-A high-level description of your project, what problem it solves, and why it's useful. If applicable, include a brief overview of the tech stack used.
-
-**Example**:
-This project is a multi-threaded web scraping tool that uses Node.js, Puppeteer, and worker threads to collect data from specific web pages concurrently. It supports proxy management and outputs results to a CSV file.
+## Overview
+A Node.js-based multi-threaded web scraping tool that leverages worker threads and Puppeteer to collect data after logging in to Rakuten.com concurrently from the account page. The tool navigates using proxies and exports results to a CSV file.
 
 ## Features
-- **Concurrent Data Collection**: Leverages worker threads to efficiently collect data.
-- **Proxy Support**: Automatically uses proxies to navigate web pages.
-- **CSV Export**: Aggregates results into a CSV file for easy analysis.
+- **Concurrent Web Scraping**: Utilizes worker threads for efficient data collection.
+- **Proxy Support**: Connects to web pages through a series of proxies provided via a CSV file.
+- **CSV Export**: Aggregates the results into an easily analyzable CSV file.
 
 ## Prerequisites
-List any prerequisites required for running this project.
-
-**Example**:
 - Node.js >= 14.x
 - npm >= 6.x
-- A private Brave browser (optional)
-- A valid list of proxies (if applicable)
+- A CSV file containing a list of proxies in the format: `ip:port:username:password`
 
-## Setup Instructions
-Steps to set up the project in your local environment.
-
+## Setup and Usage
 1. **Clone the Repository**:
    ```bash
    git clone https://github.com/yourusername/project-name.git
+
+2. **Navigate to the Project Directory**:
+   ```bash
+   cd project-name
+   
+3. **Install Dependencies**:
+   npm install
+
+4. **Prepare Proxies**:
+   Ensure that your proxies.csv file is in the required format.
+   IP:Port:Username:Password
+
+5. **Execute the Script**:
+   Adjust the CSV file path and set a task limit as desired.
+   node main.js ./proxies.csv 10
+
+6. **Check Output**:
+   Review the generated output.csv file for the collected results.
+
