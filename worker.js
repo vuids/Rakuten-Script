@@ -19,7 +19,7 @@ async function mainWithBrowser() {
     const proxyUrl = `http://${ip}:${port}`;
     const password = 'Password123456_';  // Assuming this is a static password for demonstration
     const catchall = 'gmail.com';
-    const email = generateSixDigitNumber(catchall);
+    const email = generateEmailAddress(catchall);
 
     try {
         const browser = await puppeteer.launch({
